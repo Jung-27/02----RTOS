@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "d:/VS/gnu_toolchain/bin/arm-none-eabi-gcc.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-arm",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/Start",
+        "${workspaceFolder}/Library",
+        "${workspaceFolder}/User",
+        "${workspaceFolder}/System"
+      ],
+      "defines": [
+        "STM32F10X_MD",
+        "USE_STDPERIPH_DRIVER"
+      ]
+    }
+  ],
+  "version": 4
+}
