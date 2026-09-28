@@ -3,7 +3,8 @@ name: Project
 type: ARM
 deviceName: null
 packDir: null
-srcDirs: []
+srcDirs:
+  - FreeRTOS
 virtualFolder:
   name: <virtual_root>
   files: []
@@ -72,7 +73,26 @@ virtualFolder:
         - path: System/Delay.h
       folders: []
     - name: Hardware
-      files: []
+      files:
+        - path: Hardware/Buzz.c
+        - path: Hardware/Buzz.h
+        - path: Hardware/DH11.c
+        - path: Hardware/DH11.h
+        - path: Hardware/LED.c
+        - path: Hardware/LED.h
+        - path: Hardware/Light.c
+        - path: Hardware/Light.h
+        - path: Hardware/Motor.c
+        - path: Hardware/Motor.h
+        - path: Hardware/MQ2.c
+        - path: Hardware/MQ2.h
+        - path: Hardware/OLED.c
+        - path: Hardware/OLED.h
+        - path: Hardware/OLED_Font.h
+        - path: Hardware/PWM.c
+        - path: Hardware/PWM.h
+        - path: Hardware/TaskList.c
+        - path: Hardware/TaskList.h
       folders: []
     - name: User
       files:
@@ -96,6 +116,8 @@ targets:
         - Library
         - Hardware
         - System
+        - FreeRTOS/include
+        - FreeRTOS/portable/RVDS/ARM_CM3
       libList: []
     excludeList: []
     settings:
